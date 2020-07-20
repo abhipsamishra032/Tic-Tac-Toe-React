@@ -1,0 +1,226 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: #0B233F;
+  color: #F0F0F0;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.player-section {
+  width: 80%;
+  height: 80px;
+  padding-left: 18%;
+  font-size: 18px;
+  margin: 10px 0 19px 0;
+}
+
+.text {
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+.big-text {
+  font-size: 20px;
+  font-weight: bolder;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 123px;
+  overflow: hidden;
+}
+
+.x-component,
+.o-component {
+  font-size: 30px;
+  font-weight: bolder;
+}
+
+.continue-section {
+  padding-left: 79px;
+}
+
+.continue-btn {
+  width: 300px;
+  height: 49px;
+  background: transparent linear-gradient(270deg, #FBA202 0%, #FF5800 100%) 0% 0% no-repeat padding-box;
+  box-shadow: 0px 3px 6px #000000;
+  border-radius: 2px;
+  cursor: pointer;
+  color: #fff;
+  font: 'Regular 14px/21px Poppins';
+}
+
+.wrapper-component {
+  margin: 5% 0 0 30%;
+  width: 480px;
+  height: 480px;
+  border: 2px dashed #FFFFFF;
+  border-radius: 46px;
+  opacity: 1;
+}
+
+.game-component {
+   width: 440px;
+   height: 440px;
+   margin: 20px;
+   box-shadow: 0px 3px 6px #000000DD;
+   background: #253952 0% 0% no-repeat padding-box;
+   border-radius: 46px;
+   opacity: 1;
+}
+
+.heading  {
+  text-align: center;
+  letter-spacing: 0.83px;
+  font-size: 25px;
+  padding: 50px 10px 25px 10px;
+}
+
+input[type=text] {
+  width: 300px;
+  height: 49px;
+  border: 1px solid #F0F0F0;
+  border-radius: 2px;
+  background: #253952 0% 0% no-repeat padding-box;
+}
+
+
+.board-row {
+  display: flex;
+}
+
+.board-heading {
+  margin-top: 0;
+  margin-bottom: 8px;
+  font: 700 18px / 1.618 sans-serif;
+  list-style-type: none;
+}
+
+.board-history {
+  margin-left: 18px;
+}
+
+.board-history-list {
+  padding: 0;
+  list-style-type: none;
+}
+
+.board-footer {
+  width: 100%;
+  margin-left: 34%;
+  margin-top: 5%;
+}
+
+.player-box-text {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.board_box {
+  display: flex;
+  outline: none;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  width: calc(440px / 3);
+  height: calc(440px / 3);
+  font-size: 100px;
+  font-weight: bolder;
+  color: #fff;
+  background: #253952 0% 0% no-repeat padding-box;
+  border: 1px dashed #aaa;
+}
+
+.board-row:nth-child(1) .board_box:nth-child(1) {
+  border-top-left-radius: 46px;
+}
+.board-row:nth-child(1) .board_box:nth-child(3) {
+  border-top-right-radius: 46px;
+}
+.board-row:nth-child(3) .board_box:nth-child(1) {
+  border-bottom-left-radius: 46px;
+}
+.board-row:nth-child(3) .board_box:nth-child(3) {
+  border-bottom-right-radius: 46px;
+}
+
+.first-player-screen {
+  float: left;
+  width: 123px;
+  height: 200px;
+  margin-top: 15%;
+  margin-left: 5%;
+}
+
+.second-player-screen {
+  float: right;
+  width: 123px;
+  height: 200px;
+  margin-top: 15%;
+  margin-right: 5%;
+}
+
+.first-player {
+  width: 123px;
+  height: 137px;
+  background: #253952 0% 0% no-repeat padding-box;
+  border-radius: 24px;
+  opacity: 1;
+}
+
+.second-player {
+  width: 123px;
+  height: 137px;
+  background: #253952 0% 0% no-repeat padding-box;
+  border-radius: 24px;
+  opacity: 1;
+}
+
+.btn {
+  padding: 12px 16px;
+  margin-top: 18px;
+  font-size: 14px;
+  color: #fff;
+  background-color: #3498db;
+  border: 0;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color .25s ease-in-out;
+}
+
+.btn:hover {
+  background-color: #2980b9;
+}
+
+.fillDot {
+  height: 10px;
+  width: 10px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 5px;
+}
+
+.emptyDot {
+  height: 10px;
+  width: 10px;
+  background-color: #253952;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 5px;
+}
+
+.winner-text {
+  text-align: center;
+  width: 95%;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  margin-left: 3%;
+}
